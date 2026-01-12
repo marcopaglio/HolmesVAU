@@ -1,12 +1,12 @@
 accelerate
 bitsandbytes==0.41.0
 decord
+numpy==1.26.2
 deepspeed==0.13.5
 einops==0.6.1
 einops-exts==0.0.4
 huggingface_hub
 imageio
-numpy==1.26.2
 opencv-python
 orjson
 peft>=0.4.0

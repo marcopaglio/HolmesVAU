@@ -4,7 +4,7 @@ from decord import VideoReader, cpu
 import matplotlib.pyplot as plt
 from holmesvau.holmesvau_utils import load_model, generate, show_smapled_video
 
-mllm_path = './ckpts/HolmesVAU-2B'
+mllm_path = './ckpts/HolmesVAU-2B' #TODO: path relativo ./ckpts/HolmesVAU-2B
 sampler_path = './holmesvau/ATS/anomaly_scorer.pth'
 device = torch.device('cuda:0')
 model, tokenizer, generation_config, sampler = load_model(mllm_path, sampler_path, device)
