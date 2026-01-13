@@ -1,3 +1,4 @@
 HIVAU-70k
 *.pyc
 ckpts
+*.png

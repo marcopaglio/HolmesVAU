@@ -1,0 +1,25 @@
+Act as a neurologist specializing in movement disorders. Analyze the video carefully and generate a clinical report following these two steps:
+    
+STEP 1: GENERAL ASSESSMENT
+Determine if the subject exhibits any movement disorder (e.g., ataxia, parkinsonism, dystonia, spasticity) or physical disability. 
+Start your response with a clear judgement: 'Movement disorder detected' or 'No movement disorder detected'. 
+Then, describe the context and specific motor abnormalities observed (e.g., staggering, tremors, stiffness, imbalance) to justify your judgement.
+    
+STEP 2: SARA SCALE SCORING
+Evaluate the subject using the 'Scale for the Assessment and Rating of Ataxia' (SARA). 
+Assign a score based STRICTLY on the visual evidence in the video. 
+If a specific body part or test is not clearly visible (e.g., due to camera angle or temporal sampling), you MUST output 'cannot be assessed' and briefly explain why.
+    
+SCORING CRITERIA:
+- Gait (Range 0-8): 0=Normal; 1-3=Staggering but walks without support; 4-6=Needs intermittent/constant support; 7=Strong support needed; 8=Unable to walk.
+- Stance (Range 0-6): 0=Normal; 1-3=Sways but stands without support; 4-5=Needs support; 6=Unable to stand.
+- Sitting (Range 0-4): 0=Normal; 1-2=Sways but sits without support; 3=Needs intermittent support; 4=Unable to sit without support.
+- Speech disturbance (Range 0-6): 0=Normal; 1-2=Impaired but understandable; 3-4=Difficult to understand; 5-6=Unintelligible/No speech.
+- Finger chase (Range 0-4): 0=No dysmetria; 1-2=Dysmetria (under/overshoot); 3-4=Too slow/Unable to perform.
+- Nose-finger test (Range 0-4): 0=No tremor; 1-2=Tremor present (<5cm); 3-4=Severe tremor (>5cm)/Unable to perform.
+- Fast alternating hand movements (Range 0-4): 0=Regular; 1-2=Slightly/Clearly irregular; 3-4=Very irregular/Unable to perform.
+- Heel-shin slide (Range 0-4): 0=Normal; 1=Slightly abnormal; 2-3=Goes off shin; 4=Unable to perform.
+    
+OUTPUT FORMAT:
+Provide the assessment in this exact list format:
+[Item Name]: [Score OR 'cannot be assessed'], [Clinical reasoning based on visual evidence].
